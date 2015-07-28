@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['samp_5ff',['samp_f',['../_freq_domain_demo_8pde.html#a74264b5a843ff69a1aabe737f0c687c0',1,'FreqDomainDemo.pde']]],
+  ['setmargin',['setMargin',['../class_axis.html#ae91f18f889fc7069e56f016e51cf6400',1,'Axis']]],
+  ['setnsamples',['setNSamples',['../_freq_domain_demo_8pde.html#ab1c5c5a397b3b76a3969b89209c6c6f1',1,'FreqDomainDemo.pde']]],
+  ['setrange',['setRange',['../class_axis.html#afaeed09a2b8515f3fab643ea7bf8c0d0',1,'Axis']]],
+  ['setsignalfrequency',['setSignalFrequency',['../_freq_domain_demo_8pde.html#ad28f9e40d1c55f9d1d9ecd0428af607a',1,'FreqDomainDemo.pde']]],
+  ['setup',['setup',['../_freq_domain_demo_8pde.html#a4fc01d736fe50cf5b977f755b675f11d',1,'FreqDomainDemo.pde']]],
+  ['setwave_5frectangle',['setWave_rectangle',['../_freq_domain_demo_8pde.html#ad416a9c2ec3686979eb09b4dbd219e2a',1,'FreqDomainDemo.pde']]],
+  ['setwave_5fsin',['setWave_sin',['../_freq_domain_demo_8pde.html#a64b8416e3f71fb3fb34d49802e2e31ce',1,'FreqDomainDemo.pde']]],
+  ['sig_5ffreq',['sig_freq',['../_freq_domain_demo_8pde.html#a7a7a1883af61a0560eb2f94cc2ea3230',1,'FreqDomainDemo.pde']]],
+  ['sig_5ft',['sig_t',['../_freq_domain_demo_8pde.html#ae9f5bf980696c62507d60227ec3bb834',1,'FreqDomainDemo.pde']]],
+  ['sig_5fx',['sig_x',['../_freq_domain_demo_8pde.html#acaa94b92c56eabcfcf95e15b5aa8a238',1,'FreqDomainDemo.pde']]],
+  ['sig_5fx_5fbuf',['sig_x_buf',['../_freq_domain_demo_8pde.html#a01fe47c3c259e137520dc93cd7a5ca50',1,'FreqDomainDemo.pde']]],
+  ['signalduration',['signalDuration',['../_freq_domain_demo_8pde.html#a6274d319f0e35e8ab2e0c155cda58384',1,'FreqDomainDemo.pde']]],
+  ['sp_5fspec',['sp_spec',['../gui_8pde.html#acc8aa07ba5e6f2bfdb2a41931b82ecfe',1,'gui.pde']]],
+  ['sp_5fwave',['sp_wave',['../gui_8pde.html#aec888cb167c1e071f8f81cb7836f5ad5',1,'gui.pde']]],
+  ['spec_5ff',['spec_f',['../_freq_domain_demo_8pde.html#a15e03ced3f6f60042592f63dc6797318',1,'FreqDomainDemo.pde']]],
+  ['spec_5ff_5fbuf',['spec_f_buf',['../_freq_domain_demo_8pde.html#ae53078268e6ee5bf4897d5bed82ce343',1,'FreqDomainDemo.pde']]],
+  ['spec_5fpow',['spec_pow',['../_freq_domain_demo_8pde.html#a2286391661371b2571f9ac5cf1e06d30',1,'FreqDomainDemo.pde']]]
+];

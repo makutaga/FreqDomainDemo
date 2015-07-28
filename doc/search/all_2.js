@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['calcspectrum',['calcSpectrum',['../_freq_domain_demo_8pde.html#a6a4737a37161effd97d4c19bd1add963',1,'FreqDomainDemo.pde']]],
+  ['calctickstep',['calcTickStep',['../class_axis.html#aff5997a35282d5a3f6b099691c8dd6bb',1,'Axis']]],
+  ['cb_5fimpulse',['cb_impulse',['../gui_8pde.html#ad48131d2d4d541cad7ea4b59f651e7d5',1,'gui.pde']]],
+  ['cb_5fimpulse_5fclicked1',['cb_impulse_clicked1',['../gui_8pde.html#a0047bf8c95143bc091d602ff6c8978c0',1,'gui.pde']]],
+  ['cb_5fline',['cb_line',['../gui_8pde.html#a28ae7a86b13a3883daf9c8ba26933420',1,'gui.pde']]],
+  ['cb_5fline_5fclicked1',['cb_line_clicked1',['../gui_8pde.html#ae64435e0dcaf100019e469e86da3e9b2',1,'gui.pde']]],
+  ['cb_5fmarker',['cb_marker',['../gui_8pde.html#a0f6ac26cc9c028a45110bbfbe7030ec2',1,'gui.pde']]],
+  ['cb_5fmarker_5fclicked1',['cb_marker_clicked1',['../gui_8pde.html#a58b06abf5f548cc9c5b7d99131908abc',1,'gui.pde']]],
+  ['col_5faxis',['col_axis',['../class_axis.html#ad6cc5fe43c2bccf560b961048b26ff0a',1,'Axis']]],
+  ['col_5fbg',['col_bg',['../class_axis.html#a2c3e455ad01c437378d61d746b10eb32',1,'Axis']]],
+  ['col_5ffill',['col_fill',['../class_abstract_plot.html#a59289ae6747d3a37cce4d8cf73e261cd',1,'AbstractPlot']]],
+  ['col_5fline',['col_line',['../class_abstract_plot.html#afb23132fa44e9be9052d1af396429c94',1,'AbstractPlot']]],
+  ['col_5fmarker',['col_marker',['../class_plot.html#afbc4c8d0213d256c63ff49724522e275',1,'Plot']]],
+  ['col_5ftick',['col_tick',['../class_axis.html#a721a9dae122e520aa51c1b1219d71c4f',1,'Axis']]],
+  ['creategui',['createGUI',['../gui_8pde.html#ae3700d532c2ae5e2171016e13584b2d6',1,'gui.pde']]],
+  ['customgui',['customGUI',['../_freq_domain_demo_8pde.html#ac72bb8c262798ea37adbb40415f7d485',1,'FreqDomainDemo.pde']]]
+];
