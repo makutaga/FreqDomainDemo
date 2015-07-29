@@ -1,11 +1,16 @@
-//! Axis class
-/*!
+/** \file Axis.pde Axis \~english class. \~japanese クラス．
+  \~english
   Maintain all about the AXIS
+  \~japanese
+  軸（axis）に関するいろいろ．
   */
   
+/** \class Axis 
+  軸（axis）に関するいろいろ．
+  */
 class Axis {
-  int area_width;    /**< グラフエリアの幅 [pixel]*/
-  int area_height;   /**< グラフエリアの高さ [pixel] */
+  int area_width;    /**< \~japanese グラフエリアの幅 \~english width of the graph area \~ [pixel]*/
+  int area_height;   /**< \~japanese グラフエリアの高さ \~english height of the graph area \~ [pixel] */
   int margin_l;      /**< グラフエリア内部のグラフまでの左側のマージン */
   int margin_t;      /**< グラフエリア内部のグラフまでの上側のマージン */
   int margin_r;      /**< グラフエリア内部のグラフまでの右側のマージン */
@@ -160,10 +165,27 @@ class Axis {
     else {
       fmt = String.format("%%.%df", int(ceil(-ex)));
     }
-    println(tick_step, ex, fmt);
+//    println(tick_step, ex, fmt);
     return fmt;
   }
-  
+  /** 
+    \~japanese 与えられた座標がグラフないかどうかのチェック.
+    \~english Check whether given coordinate is inside of the graph.
+    
+    \~
+    \param px x coordinate in pixel
+    \param py y coordinate in pixel
+    \return \c true if the coordinate is inside, \c false for otherwise.
+   */  
+  boolean isInside(int px, int py) {
+    if (px > margin_l && px <= area_width - margin_r 
+      && py > margin_t && py <= area_height - margin_b) {
+        return true;
+      }
+      else {
+        return false;
+      }
+  }
 }
 
 
