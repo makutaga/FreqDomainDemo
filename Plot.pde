@@ -20,8 +20,11 @@ class Plot extends AbstractPlot {
     col_marker = col_line;
   }
   void update(PGraphics pg, Axis axis) {
-    println("LineGraph::update(): " + label);
-    
+//    println("LineGraph::update(): " + label);
+  
+    if (enable != true) {
+      return;
+    }  
     if (plot_line) {
       draw_line(pg, axis);
     }

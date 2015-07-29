@@ -81,6 +81,28 @@ public void panel_phase_Click1(GPanel source, GEvent event) { //_CODE_:panel_pha
   println("panel_phase - GPanel >> GEvent." + event + " @ " + millis());
 } //_CODE_:panel_phase:529043:
 
+public void cb_ifft_clicked1(GCheckbox source, GEvent event) { //_CODE_:cb_ifft:986483:
+  println("cb_ifft - GCheckbox >> GEvent." + event + " @ " + millis());
+  if (event == GEvent.SELECTED) {
+    plot_iwave.enable = true;
+  }
+  else {
+    plot_iwave.enable = false;
+  }
+  updateGraph();
+} //_CODE_:cb_ifft:986483:
+
+public void cb_original_clicked1(GCheckbox source, GEvent event) { //_CODE_:cb_original:305347:
+  println("cb_original - GCheckbox >> GEvent." + event + " @ " + millis());
+  if (event == GEvent.SELECTED) {
+    plot_wave.enable = true;
+  }
+  else {
+    plot_wave.enable = false;
+  }
+  updateGraph();
+} //_CODE_:cb_original:305347:
+
 
 
 // Create all the GUI controls. 
@@ -119,7 +141,7 @@ public void createGUI(){
   cb_impulse.setOpaque(false);
   cb_impulse.addEventHandler(this, "cb_impulse_clicked1");
   cb_impulse.setSelected(true);
-  cb_marker = new GCheckbox(this, 150, 320, 70, 20);
+  cb_marker = new GCheckbox(this, 150, 320, 60, 20);
   cb_marker.setTextAlign(GAlign.LEFT, GAlign.MIDDLE);
   cb_marker.setText("Marker");
   cb_marker.setOpaque(false);
@@ -145,6 +167,18 @@ public void createGUI(){
   panel_phase.addEventHandler(this, "panel_phase_Click1");
   sp_phase = new GSketchPad(this, 10, 30, 280, 260);
   panel_phase.addControl(sp_phase);
+  cb_ifft = new GCheckbox(this, 220, 340, 80, 20);
+  cb_ifft.setTextAlign(GAlign.LEFT, GAlign.MIDDLE);
+  cb_ifft.setText("Inverse FFT");
+  cb_ifft.setOpaque(false);
+  cb_ifft.addEventHandler(this, "cb_ifft_clicked1");
+  cb_ifft.setSelected(true);
+  cb_original = new GCheckbox(this, 220, 320, 120, 20);
+  cb_original.setTextAlign(GAlign.LEFT, GAlign.MIDDLE);
+  cb_original.setText("Original");
+  cb_original.setOpaque(false);
+  cb_original.addEventHandler(this, "cb_original_clicked1");
+  cb_original.setSelected(true);
 }
 
 // Variable declarations 
@@ -163,4 +197,6 @@ GLabel label2;
 GTextField tf_sigfreq; 
 GPanel panel_phase; 
 GSketchPad sp_phase; 
+GCheckbox cb_ifft; 
+GCheckbox cb_original; 
 

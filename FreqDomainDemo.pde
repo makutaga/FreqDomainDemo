@@ -167,6 +167,9 @@ void mousePressed() {
   mouse_pressed_y = mouseY;
   if (graph_spec.isInside(mouseX, mouseY)) {
     selected_freq_idx = int(graph_spec.axis.vX(mouseX - graph_spec.box_x) / signalDuration + 0.5);
+    if (selected_freq_idx >= spec_re.length / 2) {
+      selected_freq_idx = spec_re.length / 2 - 1;
+    }
     pre_re = spec_re[selected_freq_idx];
     pre_im = spec_im[selected_freq_idx]; 
     println("mousePressed(): selected_freq_idx:", selected_freq_idx, pre_re, pre_im);

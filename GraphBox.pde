@@ -101,11 +101,13 @@ class GraphBox {
 
 class AbstractPlot {
   String label = "abstract graph";
+  boolean enable;
   color col_line;
   color col_fill;
   AbstractPlot() {
     col_line = color(0, 255, 255);
     col_fill = color(0, 128, 128);
+    enable = true;
   }
   void update(PGraphics pg, Axis axis) {
     println("AbstractGraph::update(): " + label);
