@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['valx',['valx',['../class_plot.html#af912a547f8422d699043840d4d0229ca',1,'Plot']]],
-  ['valy',['valy',['../class_plot.html#a1791ca1e9b5d2ed843dd6581a2ea1023',1,'Plot']]]
+  ['tf_5fsigfreq',['tf_sigfreq',['../gui_8pde.html#a2cb5906e49e0d5d7aa93c029409f1f9c',1,'gui.pde']]],
+  ['toggroup_5fwavetype',['togGroup_waveType',['../gui_8pde.html#aefa19a8784ca7d9fca2e4c88df87a725',1,'gui.pde']]]
 ];

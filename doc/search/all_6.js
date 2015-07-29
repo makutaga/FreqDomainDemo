@@ -1,5 +1,10 @@
 var searchData=
 [
-  ['in',['in',['../_freq_domain_demo_8pde.html#a8092cbdeab54a216da96dd2e16327a74',1,'FreqDomainDemo.pde']]],
-  ['isfloat',['isFloat',['../_freq_domain_demo_8pde.html#a9f789846a01cc05bec9984a771e72586',1,'FreqDomainDemo.pde']]]
+  ['gettickformat',['getTickFormat',['../class_axis.html#a950846d14e148e0769e926d63faf8086',1,'Axis']]],
+  ['graph_5fphase',['graph_phase',['../_freq_domain_demo_8pde.html#acfd31cc655a51f8359dae6e2c106ecc0',1,'FreqDomainDemo.pde']]],
+  ['graph_5fspec',['graph_spec',['../_freq_domain_demo_8pde.html#ac8afd05426df9a25e5ff328c308d2cf0',1,'FreqDomainDemo.pde']]],
+  ['graph_5fwave',['graph_wave',['../_freq_domain_demo_8pde.html#a9126f19650eacd0ee0f791ec3c1aa7de',1,'FreqDomainDemo.pde']]],
+  ['graphbox',['GraphBox',['../class_graph_box.html',1,'GraphBox'],['../class_graph_box.html#a9ecf074164ab52a1a269790200b28c15',1,'GraphBox.GraphBox()']]],
+  ['graphbox_2epde',['GraphBox.pde',['../_graph_box_8pde.html',1,'']]],
+  ['gui_2epde',['gui.pde',['../gui_8pde.html',1,'']]]
 ];

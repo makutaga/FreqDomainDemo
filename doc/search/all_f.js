@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['valx',['valx',['../class_plot.html#af912a547f8422d699043840d4d0229ca',1,'Plot']]],
-  ['valy',['valy',['../class_plot.html#a1791ca1e9b5d2ed843dd6581a2ea1023',1,'Plot']]],
-  ['vx',['vX',['../class_axis.html#a83fb3d530e290fcdf10a9c956621e22e',1,'Axis']]],
-  ['vy',['vY',['../class_axis.html#a7f54fe6b929730321e925552768b43d5',1,'Axis']]]
+  ['update',['update',['../class_axis.html#a2d0923ba8bcc6274b877a213a08b30b2',1,'Axis.update()'],['../class_graph_box.html#aed69e1626dce4ebba7641b709fcc2bee',1,'GraphBox.update()'],['../class_abstract_plot.html#aa113e02b14fe743811d6f054f05f719e',1,'AbstractPlot.update()'],['../class_plot.html#adb208917186474eff05d6a8ebbebba61',1,'Plot.update()']]],
+  ['updategraph',['updateGraph',['../_freq_domain_demo_8pde.html#ae32b07610836ab0bbc82ac2577de8d45',1,'FreqDomainDemo.pde']]]
 ];

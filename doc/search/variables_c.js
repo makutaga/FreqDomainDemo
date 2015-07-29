@@ -1,14 +1,20 @@
 var searchData=
 [
-  ['samp_5ff',['samp_f',['../_freq_domain_demo_8pde.html#a74264b5a843ff69a1aabe737f0c687c0',1,'FreqDomainDemo.pde']]],
-  ['sig_5ffreq',['sig_freq',['../_freq_domain_demo_8pde.html#a7a7a1883af61a0560eb2f94cc2ea3230',1,'FreqDomainDemo.pde']]],
-  ['sig_5ft',['sig_t',['../_freq_domain_demo_8pde.html#ae9f5bf980696c62507d60227ec3bb834',1,'FreqDomainDemo.pde']]],
-  ['sig_5fx',['sig_x',['../_freq_domain_demo_8pde.html#acaa94b92c56eabcfcf95e15b5aa8a238',1,'FreqDomainDemo.pde']]],
-  ['sig_5fx_5fbuf',['sig_x_buf',['../_freq_domain_demo_8pde.html#a01fe47c3c259e137520dc93cd7a5ca50',1,'FreqDomainDemo.pde']]],
-  ['signalduration',['signalDuration',['../_freq_domain_demo_8pde.html#a6274d319f0e35e8ab2e0c155cda58384',1,'FreqDomainDemo.pde']]],
-  ['sp_5fspec',['sp_spec',['../gui_8pde.html#acc8aa07ba5e6f2bfdb2a41931b82ecfe',1,'gui.pde']]],
-  ['sp_5fwave',['sp_wave',['../gui_8pde.html#aec888cb167c1e071f8f81cb7836f5ad5',1,'gui.pde']]],
-  ['spec_5ff',['spec_f',['../_freq_domain_demo_8pde.html#a15e03ced3f6f60042592f63dc6797318',1,'FreqDomainDemo.pde']]],
-  ['spec_5ff_5fbuf',['spec_f_buf',['../_freq_domain_demo_8pde.html#ae53078268e6ee5bf4897d5bed82ce343',1,'FreqDomainDemo.pde']]],
-  ['spec_5fpow',['spec_pow',['../_freq_domain_demo_8pde.html#a2286391661371b2571f9ac5cf1e06d30',1,'FreqDomainDemo.pde']]]
+  ['panel_5fphase',['panel_phase',['../gui_8pde.html#a14dbaec7ab891a1fd489ff337d0f94f1',1,'gui.pde']]],
+  ['pg',['pg',['../class_graph_box.html#ae94ac28ffddd0892333d7ab57b867c95',1,'GraphBox']]],
+  ['phase_5fim',['phase_im',['../_freq_domain_demo_8pde.html#ac4e0e23654af41b4d31883671ec4b9ef',1,'FreqDomainDemo.pde']]],
+  ['phase_5fre',['phase_re',['../_freq_domain_demo_8pde.html#a7b27ddbeb5b1fd42fea2e3db672eeb02',1,'FreqDomainDemo.pde']]],
+  ['plot_5fimpulse',['plot_impulse',['../class_plot.html#a3a9ee2b298d31e350bd16de9f72b7f03',1,'Plot']]],
+  ['plot_5fiwave',['plot_iwave',['../_freq_domain_demo_8pde.html#ac4b5bfa4a2145bdb9a967120785e41cd',1,'FreqDomainDemo.pde']]],
+  ['plot_5fline',['plot_line',['../class_plot.html#a403d589c5c41c5c6d28a1e64c583c7de',1,'Plot']]],
+  ['plot_5fmarker',['plot_marker',['../class_plot.html#a876889a464770c35d0fabc2df3756984',1,'Plot']]],
+  ['plot_5fphase',['plot_phase',['../_freq_domain_demo_8pde.html#a493728308b974165d98e9ed1b04671da',1,'FreqDomainDemo.pde']]],
+  ['plot_5fspec',['plot_spec',['../_freq_domain_demo_8pde.html#a16948fd163288784e598f1a534b06c61',1,'FreqDomainDemo.pde']]],
+  ['plot_5fwave',['plot_wave',['../_freq_domain_demo_8pde.html#a0c2c96b434381b851bb34b1306b063d7',1,'FreqDomainDemo.pde']]],
+  ['plots',['plots',['../class_graph_box.html#a3132705ddd053b74d98f1a845b520ecc',1,'GraphBox']]],
+  ['ppv_5fx',['ppv_x',['../class_axis.html#add995ee73cae49bdc4399262703a35f7',1,'Axis']]],
+  ['ppv_5fy',['ppv_y',['../class_axis.html#a20de6d40f0db3ba89b661ab5e9cba949',1,'Axis']]],
+  ['pre_5fim',['pre_im',['../_freq_domain_demo_8pde.html#af3186c1a819cdcfd93b8db5889d18f90',1,'FreqDomainDemo.pde']]],
+  ['pre_5fre',['pre_re',['../_freq_domain_demo_8pde.html#ab22e7fe6cdf7c80c24d2c198b5f4eb93',1,'FreqDomainDemo.pde']]],
+  ['prefered_5ftick_5fstep',['prefered_tick_step',['../class_axis.html#afcaab201fcd29c580c4dff334fd06b73',1,'Axis']]]
 ];

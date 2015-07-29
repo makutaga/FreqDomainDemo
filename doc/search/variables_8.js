@@ -1,11 +1,8 @@
 var searchData=
 [
-  ['margin_5fb',['margin_b',['../class_axis.html#a7ae2c1c6da0407db5a239236af619594',1,'Axis']]],
-  ['margin_5fl',['margin_l',['../class_axis.html#a8ef0fd55114fa44424c2c15ceebede45',1,'Axis']]],
-  ['margin_5fr',['margin_r',['../class_axis.html#ae2e5e2d955a228cfaca1ae98f29671ab',1,'Axis']]],
-  ['margin_5ft',['margin_t',['../class_axis.html#aadf834a1fe48d4996179fb356ff0affb',1,'Axis']]],
-  ['marker_5fsize',['marker_size',['../class_plot.html#a20e2ba9d477b21cc8f3b0cdc114de3b0',1,'Plot']]],
-  ['max_5fx',['max_x',['../class_axis.html#a053b06062128351a3690f2f1ac2acdc8',1,'Axis']]],
-  ['max_5fy',['max_y',['../class_axis.html#ae0c7d440226fab75891a17525d142075',1,'Axis']]],
-  ['minim',['minim',['../_freq_domain_demo_8pde.html#ad2779ac1e0eef469c35550c9f5b1aca4',1,'FreqDomainDemo.pde']]]
+  ['label',['label',['../class_abstract_plot.html#a4afc5e2fd2f270d25f85775ff62aaf26',1,'AbstractPlot']]],
+  ['label1',['label1',['../gui_8pde.html#a4fab12ff9534fcf2d40a902c841f0486',1,'gui.pde']]],
+  ['label2',['label2',['../gui_8pde.html#a317b89fcb205ed900cb43e1618031945',1,'gui.pde']]],
+  ['label_5fx',['label_x',['../class_axis.html#aba5f1dca86cc11e4bd4801d985e15a77',1,'Axis']]],
+  ['label_5fy',['label_y',['../class_axis.html#a91c7448b945aadcd2f9bfa39e7f78071',1,'Axis']]]
 ];

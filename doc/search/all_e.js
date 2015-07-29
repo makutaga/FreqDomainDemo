@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['update',['update',['../class_axis.html#a2d0923ba8bcc6274b877a213a08b30b2',1,'Axis.update()'],['../class_graph_box.html#aed69e1626dce4ebba7641b709fcc2bee',1,'GraphBox.update()'],['../class_abstract_plot.html#aa113e02b14fe743811d6f054f05f719e',1,'AbstractPlot.update()'],['../class_plot.html#adb208917186474eff05d6a8ebbebba61',1,'Plot.update()']]],
-  ['updategraph',['updateGraph',['../_freq_domain_demo_8pde.html#ae32b07610836ab0bbc82ac2577de8d45',1,'FreqDomainDemo.pde']]]
+  ['tf_5fsigfreq',['tf_sigfreq',['../gui_8pde.html#a2cb5906e49e0d5d7aa93c029409f1f9c',1,'gui.pde']]],
+  ['tf_5fsigfreq_5fchange1',['tf_sigfreq_change1',['../gui_8pde.html#a9f28a845186a3d31476d0853fd20e07a',1,'gui.pde']]],
+  ['toggroup_5fwavetype',['togGroup_waveType',['../gui_8pde.html#aefa19a8784ca7d9fca2e4c88df87a725',1,'gui.pde']]]
 ];

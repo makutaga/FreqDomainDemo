@@ -1,10 +1,11 @@
 var searchData=
 [
-  ['calcspectrum',['calcSpectrum',['../_freq_domain_demo_8pde.html#a6a4737a37161effd97d4c19bd1add963',1,'FreqDomainDemo.pde']]],
-  ['calctickstep',['calcTickStep',['../class_axis.html#aff5997a35282d5a3f6b099691c8dd6bb',1,'Axis']]],
-  ['cb_5fimpulse_5fclicked1',['cb_impulse_clicked1',['../gui_8pde.html#a0047bf8c95143bc091d602ff6c8978c0',1,'gui.pde']]],
-  ['cb_5fline_5fclicked1',['cb_line_clicked1',['../gui_8pde.html#ae64435e0dcaf100019e469e86da3e9b2',1,'gui.pde']]],
-  ['cb_5fmarker_5fclicked1',['cb_marker_clicked1',['../gui_8pde.html#a58b06abf5f548cc9c5b7d99131908abc',1,'gui.pde']]],
-  ['creategui',['createGUI',['../gui_8pde.html#ae3700d532c2ae5e2171016e13584b2d6',1,'gui.pde']]],
-  ['customgui',['customGUI',['../_freq_domain_demo_8pde.html#ac72bb8c262798ea37adbb40415f7d485',1,'FreqDomainDemo.pde']]]
+  ['dl_5fnsamples_5fclick1',['dl_nsamples_click1',['../gui_8pde.html#a03237e76841e80a0ff6ddcbf9d162680',1,'gui.pde']]],
+  ['draw',['draw',['../_freq_domain_demo_8pde.html#a56c5cf8a568cff737ff95520cbe6b405',1,'FreqDomainDemo.pde']]],
+  ['draw_5fimpulse',['draw_impulse',['../class_plot.html#a1c10e3259f76a23e28e5cab2329de174',1,'Plot']]],
+  ['draw_5fline',['draw_line',['../class_plot.html#a439f9943f609047fa86aba6958129ba5',1,'Plot']]],
+  ['draw_5fmarker',['draw_marker',['../class_plot.html#a4c7ace34ccd583f3357cbee6a98936a1',1,'Plot']]],
+  ['drawphaseview',['drawPhaseView',['../_freq_domain_demo_8pde.html#a951de79afdd647c7a06f22aa8a3ac670',1,'FreqDomainDemo.pde']]],
+  ['drawticks',['drawTicks',['../class_axis.html#aba9fdb130ad48d261d5396a6a9f5b566',1,'Axis']]],
+  ['drawzeroaxis',['drawZeroAxis',['../class_axis.html#a8922ecc7f2a375ad4aefba075661a75b',1,'Axis']]]
 ];

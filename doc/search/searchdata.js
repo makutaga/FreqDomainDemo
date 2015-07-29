@@ -1,10 +1,10 @@
 var indexSectionsWithContent =
 {
-  0: "abcdfgilmnopstuv",
+  0: "abcdefgilmnopstuv",
   1: "agp",
   2: "afgp",
-  3: "abcdgimopstuv",
-  4: "abcdfgilmnopstv"
+  3: "acdgimopstuv",
+  4: "abcdefgilmnopstv"
 };
 
 var indexSectionNames =
@@ -18,10 +18,10 @@ var indexSectionNames =
 
 var indexSectionLabels =
 {
-  0: "All",
-  1: "Classes",
-  2: "Files",
-  3: "Functions",
-  4: "Variables"
+  0: "全て",
+  1: "クラス",
+  2: "ファイル",
+  3: "関数",
+  4: "変数"
 };
 
