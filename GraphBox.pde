@@ -54,6 +54,7 @@ class GraphBox {
   PGraphics pg;	///< グラフのイメージ
   int box_x;	///< グラフボックスのx座標
   int box_y;	///< グラフボックスのy座標
+  String label;  ///< グラフボックスのラベル
   
   /**
    コンストラクタ．
@@ -69,6 +70,7 @@ class GraphBox {
     axis = new Axis(w, h);
     plots = new ArrayList<AbstractPlot>();
     pg = createGraphics(w, h);
+    label = "GraphBox";
   }
   
   /**
@@ -77,7 +79,7 @@ class GraphBox {
    Axis と Plot が GraphBox::pg に再描画される．
   */
   void update() {
-    println("GraphBox::update()");
+    println("GraphBox::update():", label);
     
     pg.beginDraw();
     axis.update(pg);

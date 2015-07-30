@@ -76,15 +76,18 @@ setup() {
   
   graph_wave = new GraphBox(int(sp_wave.getX()), int(sp_wave.getY()),
       int(sp_wave.getWidth()), int(sp_wave.getHeight()));
+  graph_wave.label = "Time domain graph";
   graph_wave.axis.setMargin(50, 10, 30, 30);
   graph_wave.axis.setRange(0.0, 0.0, nsamples, 200);
   graph_wave.axis.label_x = "time [s]";
   graph_wave.axis.label_y = "amplitude";
   plot_wave = new Plot(sig_t, sig_x);
+  plot_wave.label = "Original signal";
   plot_wave.plot_line = true;
   plot_wave.plot_impulse = true;
   plot_wave.plot_marker = true;
   plot_iwave = new Plot(sig_t, isig_x);
+  plot_iwave.label = "Reconstructed signal";
   plot_iwave.plot_line = true;
   plot_iwave.plot_impulse = false;
   plot_iwave.plot_marker = true;
@@ -95,11 +98,14 @@ setup() {
   
   graph_spec = new GraphBox(int(sp_spec.getX()), int(sp_spec.getY()),
       int(sp_spec.getWidth()), int(sp_spec.getHeight()));
+  graph_wave.label = "Frequency domain graph";
+
   graph_spec.axis.setMargin(50, 10, 30, 30);
   graph_spec.axis.setRange(0.0, 0.0, nsamples, 200);
   graph_spec.axis.label_x = "frequency [Hz]";
   graph_spec.axis.label_y = "power^(1/2)";
   plot_spec = new Plot(spec_f, spec_pow);
+  plot_spec.label = "Spectrum";
   plot_spec.plot_line = true;
   plot_spec.plot_impulse = true;
   plot_spec.plot_marker = true;
@@ -109,11 +115,14 @@ setup() {
   
   graph_phase = new GraphBox(int(sp_phase.getX()), int(sp_phase.getY()),
     int(sp_phase.getWidth()), int(sp_phase.getHeight()));
+  graph_phase.label = "Phase";
+
   graph_phase.axis.setMargin(50, 10, 30, 30);
   graph_phase.axis.setRange(-1.0, -1.0, 1.0, 1.0);
   graph_phase.axis.label_x = "real part";
   graph_phase.axis.label_y = "imaginarly part";
   plot_phase = new Plot(phase_re, phase_im);
+  plot_phase.label = "Phase";
   plot_phase.plot_line = true;
   plot_phase.plot_impulse = false;
   plot_phase.plot_marker = true;
@@ -148,9 +157,9 @@ draw() {
 void
 updateGraph() {
   graph_wave.axis.setRange(
-    0.0,
+    sig_t.min(),
     sig_x.min() > isig_x.min() ? isig_x.min() : sig_x.min(),
-    signalDuration,
+    sig_t.max(),
     sig_x.max() > isig_x.max() ? sig_x.max() : isig_x.max());
   graph_wave.update();
   
@@ -192,6 +201,7 @@ void mouseMoved() {
     println(mouseX - graph_spec.box_x, graph_spec.axis.vX(mouseX - graph_spec.box_x), freq_index);
     
     panel_phase.setVisible(true);
+/*
     float panel_x = mouseX - panel_phase.getWidth() / 2;
     float panel_y = graph_spec.box_y - panel_phase.getHeight();
     if (panel_x < 0.0) {
@@ -199,6 +209,15 @@ void mouseMoved() {
     }
     else if (panel_x > width - panel_phase.getWidth()) {
       panel_x = width - panel_phase.getWidth();
+    }
+*/
+    float panel_x;
+    float panel_y = graph_spec.box_y;
+    if (mouseX < graph_spec.box_x + sp_spec.getWidth() / 2) {
+      panel_x = graph_spec.box_x + sp_spec.getWidth() - panel_phase.getWidth();
+    }
+    else {
+      panel_x = graph_spec.box_x + graph_spec.axis.margin_l + 10;
     }
     panel_phase.moveTo(panel_x, panel_y);
     drawPhaseView(freq_index / signalDuration, freq_index);
@@ -224,8 +243,10 @@ mouseDragged() {
     }
     spec_re[selected_freq_idx] = new_amp * cos(new_phase);
     spec_im[selected_freq_idx] = new_amp * sin(new_phase);
-    spec_re[spec_im.length - selected_freq_idx] = spec_re[selected_freq_idx];
-    spec_im[spec_im.length - selected_freq_idx] = -spec_im[selected_freq_idx];
+    if (selected_freq_idx != 0) {
+      spec_re[spec_im.length - selected_freq_idx] = spec_re[selected_freq_idx];
+      spec_im[spec_im.length - selected_freq_idx] = -spec_im[selected_freq_idx];
+    }
     println("mouseDragged: dx,dy:", dx, dy, new_amp, new_phase);
     drawPhaseView(0.0, selected_freq_idx);
     calcInvFourier();
@@ -243,7 +264,8 @@ void drawPhaseView(float f, int fidx) {
   phase_im.append(0.0);
   phase_re.append(spec_re[fidx]);
   phase_im.append(spec_im[fidx]);
-//  println("drawPhaseView: ", spec_re[fidx], spec_im[fidx]);
+  println("drawPhaseView: ", fidx, spec_re[fidx], spec_im[fidx]);
+ // print_float_array(spec_im);
   graph_phase.update();
   sp_phase.setGraphic(graph_phase.pg);
 }
@@ -291,6 +313,7 @@ void setWave_rectangle() {
  FFTによって時系列のスペクトラムを計算し，周波数のリスト ::spec_f ，パワのリスト ::spec_pow を求める．
  */
 void calcSpectrum() {
+  println("calcSpectrum()");
   sig_x_buf = sig_x.array();
 //  println("fs=", samp_f);
   fft = new FFT(sig_x_buf.length, samp_f);
@@ -306,20 +329,45 @@ void calcSpectrum() {
   }
   spec_re = fft.getSpectrumReal();
   spec_im = fft.getSpectrumImaginary();
-//  println("spec_re.length: ", spec_re.length);
+  for (int i = 0; i < spec_re.length; i ++) {
+    spec_im[i] = - spec_im[i];
+  }
+//  println("spec_re: ");
+//  print_float_array(spec_re);
+//  println("spec_im: ");
+//  print_float_array(spec_im);
 }
 
+void
+print_float_array(float [] v)
+{
+  for (int i = 0; i < v.length; i ++) {
+    print("[", i, "]", v[i], " ");
+  }
+  println(" ");
+}
 /** 逆フーリエ変換
  */
 void calcInvFourier() {
+  println("calcInvFourier()");
   spec_pow.clear();
   for (int i = 0; i < fft.specSize(); i ++) {
     spec_pow.append(sqrt(spec_re[i] * spec_re[i] + spec_im[i] * spec_im[i]));
   }
-  float [] x_update = new float[nsamples];
-  fft.inverse(spec_re, spec_im, x_update);
-  for (int i = 0; i < nsamples; i ++) {
-    isig_x.set(i, x_update[i]);
+  for (int i = 0; i < isig_x.size(); i ++) {
+    isig_x.set(i, 0.0);
+  }
+  float omega;
+  for (int ifreq = 1; ifreq <= spec_re.length / 2 ; ifreq ++) {
+    omega = 2 * PI / signalDuration * ifreq;
+    for (int i = 0; i < isig_x.size(); i ++) {
+      isig_x.add(i, spec_re[ifreq] * cos(omega * sig_t.get(i)));
+      isig_x.add(i, spec_im[ifreq] * sin(omega * sig_t.get(i)));
+    }
+  }
+  for (int i = 0; i < isig_x.size(); i ++) {
+    isig_x.mult(i, 2.0 / isig_x.size()); 
+    isig_x.add(i, spec_re[0]);
   }
 }
 

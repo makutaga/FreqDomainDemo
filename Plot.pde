@@ -9,7 +9,7 @@ class Plot extends AbstractPlot {
   
   Plot(FloatList x, FloatList y) {
     label = "line graph";
-    println("LineGraph()");
+    println("Plot()");
     valx = x;
     valy = y;
     col_line = color(0, 255, 255);
@@ -20,7 +20,7 @@ class Plot extends AbstractPlot {
     col_marker = col_line;
   }
   void update(PGraphics pg, Axis axis) {
-//    println("LineGraph::update(): " + label);
+    println("Plot::update(): " + label);
   
     if (enable != true) {
       return;
